@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="agencia.css">
-    <script></script>
 </head>
 <body>
     <header class="header">
@@ -18,14 +17,14 @@
             <p>Más de 20 años viajando contigo. <br> Empresa lider en organización de viajes, escapadas <br> y eventos en más de 700 paises. <br> Viaja seguro y hazlo feliz, <br> sabiendo que detrás de su viaje hay más de 70 expertos <br> cuidando al detalle sus vacaciones. <br> No lo dude y contacte con nosotros para más información</p>
             <h1>EMPIEZA TU AVENTURA</h1>
             <form class="formulario" action="">
-                <input type="text" name="name" placeholder="Nombre" id="name">
-                <input type="text" name="origen" placeholder="Origen" id="origen">
-                <input type="text" name="destino" placeholder="Destino" id="destino">
-                <input type="text" name="fecha" placeholder="Fecha" id="fecha">
-                <input type="text" name="personas" placeholder="Nº Personas" id="personas">
+                <input type="text" name="name" placeholder="Nombre" id="name" class="info" >
+                <input type="text" name="origen" placeholder="Origen" id="origen" class="info" >
+                <input type="text" name="destino" placeholder="Destino" id="destino" class="info" >
+                <input type="date" name="fecha" placeholder="Fecha" id="fecha" class="info" >
+                <input type="text" name="personas" placeholder="Nº Personas" id="personas" class="info" >
                 <div>
-                    <button value="">FILTRAR</button>
-                    <button value="">INFORMACIÓN</button>
+                    <button type="button" onclick="informacion()">INFORMACION</button>
+                    <button type="button" onclick="filtrado()">FILTRAR</button>
                 </div>
             </form>
         </div>
@@ -46,6 +45,7 @@
                 <img src="galeria/zimbabwe.jpg" alt="">
                 <h1>Zimbabwe</h1>
         </div>
+        <script src="agencia.js"></script>
 </section>
 </body>
 </html>
