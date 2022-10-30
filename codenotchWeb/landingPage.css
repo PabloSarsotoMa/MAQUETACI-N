@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header div{
+    
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstView{
+    height: 65vh;
+    width: 100vw;
+    background-image:url(galeria/fondo.ordenador.jpg);
+    background-repeat:no-repeat;
+    background-size: 100vw 65vh;
+    display: flex;
+    flex-flow: column wrap-reverse;
+    justify-content: space-around;
+    align-content: center;
+    align-items: stretch;
+    gap:15%;
+}
+.firstView a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    height: 20vh;
+    width: 20vw;
+    font-size: 2rem;
+    color: rgb(237, 248, 244);
+    border:none;
+    border-radius: 50%;
+}
+.firstView button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    height: 20vh;
+    width: 20vw;
+    font-size: 2rem;
+    color: rgb(237, 248, 244);
+    border:none;
+    border-radius: 50%;
+    background-color: rgb(7, 7, 243) ;
+    box-shadow: 10px 10px 10px 10px rgb(162, 247, 217);
+}
+.green{
+    width: 100vw;
+    height: 2vh;
+    background-color:  rgb(48, 255, 155);
+}
+.firstView_footer{
+background-color: black;
+color: rgb(237, 248, 244);
+height: 20vh;
+width: 100vw;
+display: flex;
+justify-content: space-around;
+
+}
+    .firstView_footer div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .firstView_footer div h1{
+            height: 5vh;
+            width: 20vw;
+            text-align: center;
+        }
+        .firstView_footer div p{
+            
+            text-align: center;
+        }
+.empresas{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .empresas div{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 20%;
+        padding: 2%;
+    }
+        .empresas div img{
+            width: 16.66%;
+        }
+.article_experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(21, 21, 191);
+    height: 40vh;
+    width: 100%;
+}
+    .article_experience header{
+        padding-top: 2%;
+        padding-left: 15%;
+    }
+    .experience{
+        padding-left: 15%;
+        background-color: rgb(21, 21, 191);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .experience div{
+        height: 90%;
+        width: 50%;
+    }
+    .experience div img{
+        padding-left: 10%;
+    }
+    .article_experience footer{
+        width: 100%;
+        background-color: rgb(21, 21, 191);
+        padding-top: 2%;
+        padding-left: 15%;
+        padding-bottom: 2%;
+    }
+.article_cursos{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+    .cursos_titulo{
+        height: 30vh;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .div1{
+        width: 20%;
+    }
+        .div1 h1{
+            font-size: 40px;
+        }
+    .div2{
+        width: 70%;
+    }
+    .cursos_tipo{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+    }
+    .cursos_tipo div{
+        width: 40%;
+        height: 80vh;
+        border-radius: 8px;
+        background-color: white;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titulo{
+        padding-top: 2%;
+        font-size: small;
+    }
+    .cursos_tipo p {
+        font-style: normal;
+        width: 70%;
+    }
+    .cursos_tipo div button{
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        height: 8vh;
+        width: 50%;
+        margin-top: 5%;
+    }
+    .division{
+        background-color: rgb(48, 255, 155);
+        height: 5vh;
+    }
+.contacto{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.cambia{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.cambia_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5vw;
+    width: 100%;
+}
+.cambia_section h1{
+    font-size: xx-large;
+    padding-bottom: 10%;
+}
+.cambia_section p{
+    font-size: medium;
+}
+.cambia_imagen img{
+    size: 20%;
+}
