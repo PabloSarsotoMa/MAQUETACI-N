@@ -70,3 +70,20 @@
                     font-family: 'Orbitron', sans-serif;
                     box-shadow:5px 5px 5px 5px #f2f2f2;
                 }
+    .footer{
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: whitesmoke;
+        padding: 5%;
+    }
+    .div{
+        position: absolute 1;
+        width: 100vw;
+        height: 0.5vh;
+        background-color: whitesmoke;
+    }

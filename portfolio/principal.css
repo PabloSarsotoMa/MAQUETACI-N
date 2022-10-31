@@ -65,3 +65,18 @@
             font-family: 'Orbitron', sans-serif;
             font-size: 400%;
         }
+.footer{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+    padding: 5%;
+}
+.div{
+    position: absolute 1;
+    width: 100vw;
+    height: 0.5vh;
+    background-color: whitesmoke;
+}

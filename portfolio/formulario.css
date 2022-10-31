@@ -57,3 +57,18 @@
         height: 5vh;
         box-shadow: 0 5px 5px 5px rgb(22, 19, 19);
     }
+    .footer{
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: whitesmoke;
+        padding: 5%;
+    }
+    .div{
+        position: absolute 1;
+        width: 100vw;
+        height: 0.5vh;
+        background-color: whitesmoke;
+    }
