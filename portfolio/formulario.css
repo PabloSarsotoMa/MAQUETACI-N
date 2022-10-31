@@ -1,0 +1,59 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+    gap: 3%;
+    background-color: rgb(88, 87, 87);
+    height: 10vh;
+}
+    .nav a{
+        font-size: large;
+        color: whitesmoke;
+    }
+.formulario{
+    height: 90vh;
+    background-image:url("../portfolio/galeria/portfolio\ fondo.png");
+    background-repeat:round;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+    .info{
+        display: flex;
+        gap: 5%;
+    }
+        .info input:active{
+            border: none;
+        }
+        .info input{
+            padding-left: 3%;
+            border: none;
+            border-radius: 8px;
+            width: 30vw;
+            height: 10vh;
+            box-shadow: 0 5px 5px 5px rgb(22, 19, 19);
+        }
+    .boton input:hover{
+        cursor: pointer;
+    }
+    .boton input:active{
+        transform: scaleX(1,0.5); 
+        box-shadow:5px 5px 5px 10px black;
+    }
+    .boton input{
+        transition: transform 1s linear;
+        border: none;
+        border-radius: 8px;
+        width: 10vw;
+        height: 5vh;
+        box-shadow: 0 5px 5px 5px rgb(22, 19, 19);
+    }

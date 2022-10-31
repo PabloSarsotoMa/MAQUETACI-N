@@ -1,0 +1,67 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+    gap: 3%;
+    background-color: rgb(88, 87, 87);
+    height: 10vh;
+}
+    .nav a{
+        font-size: large;
+        color: whitesmoke;
+    }
+.seccion{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    height: 90vh;
+}
+    .informacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10%;
+        padding-left: 5%;
+        width: 30%;
+    }
+        .informacion h1{
+            align-self: flex-start;
+            margin-bottom: 25%;
+            font-size: xx-large;
+        }
+        .informacion p{
+            font-size: large;
+        }
+        .informacion button{
+            align-self: flex-start;
+            margin-top: 20%;
+            border-radius: 50%;
+            width: 70%;
+            height: 10vh;
+            background-color: #334b73 ;
+            color: #cddef8 ;
+            font-size: large;
+            border: none;
+        }
+    .imagen{
+        width: 70%;
+        height: 90vh;
+        background-image:url("../portfolio/galeria/portfolio\ fondo.png");
+        background-repeat:round;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .imagen h1{
+            font-family: 'Orbitron', sans-serif;
+            font-size: 400%;
+        }
