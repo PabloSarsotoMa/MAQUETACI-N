@@ -1,6 +1,6 @@
 .main{
-    width: 90vw;
-    height: 50vh;
+
+    height: 100vh;
     display: grid;
     grid-template-areas: "a a a"
                         "c c c"

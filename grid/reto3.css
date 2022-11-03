@@ -1,4 +1,5 @@
 .cuadro{
+    height: 100vh;
     display: grid;
     grid-template-rows: [top1] 1fr [middle2] 6fr [bottom1] 1fr [bottom2];
     grid-template-columns: [left0] 2fr [middle0] 1fr [middle1] 1fr [rigth0];
