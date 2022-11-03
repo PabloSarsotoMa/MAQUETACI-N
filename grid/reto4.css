@@ -1,0 +1,104 @@
+.main{
+    width: 90vw;
+    height: 50vh;
+    display: grid;
+    grid-template-areas: "a a a"
+                        "c c c"
+                        "e e e";
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+.header{
+    grid-area: a ;
+    display: grid;
+    grid-template-areas: "b d";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+    .head{
+        grid-area: b;
+        background-color: brown;
+        display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: white;
+    }
+    .image{
+        grid-area: d;
+        background-color: rgb(70, 0, 0);
+        display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: white;
+    }
+.article{
+    grid-area: c;
+    display: grid;
+    grid-template-areas: "f g g";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+    .asides{
+        grid-area: f;
+        background-color: orange;
+        display: grid;
+        grid-template-areas: "h"
+        "i" "j";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+        .bloque1{
+            grid-area: h;
+            background-color: white;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: orangered;
+        }
+        .bloque2{
+            grid-area: j;
+            background-color: white;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: orangered;
+        }
+    .contenido{
+        grid-area: g;
+        background-color: orangered;
+        display: grid;
+        grid-template-areas: "k"
+        "l";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+        .contenido1{
+            grid-area: k;
+            border: 1px solid white;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: white;
+        }
+        .texto{
+            grid-area: l;
+            border: 1px solid white;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: white;
+        }
+.footer{
+    grid-area: e;
+    background-color: rgb(70, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+

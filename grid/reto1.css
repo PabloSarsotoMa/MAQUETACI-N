@@ -1,0 +1,54 @@
+.cuadricula{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 50% 50%;
+}
+.a{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    background-color:greenyellow ;
+}
+.b{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    background-color: orange;
+}
+.c{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    background-color: orangered;
+}
+.d{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    background-color: red;
+}
+.e{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    background-color: blue;
+}
+.f{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    background-color: yellow;
+}

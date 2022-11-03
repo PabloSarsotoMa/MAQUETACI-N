@@ -1,0 +1,151 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.principal{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .imagen img{
+        height: 85vh;
+    }
+    .formulario{
+        padding-top: 2%;
+        width: 30vw;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+        .formulario1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width:28vw;
+            height: 75%;
+            border: 0.5px solid #cccccc;
+            padding-bottom: 4%;
+        }
+            .formulario_titulo{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40%;
+            }
+                .formulario_titulo img{
+                    width:70%;
+                    height: 100%;
+                }
+            .inputs{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+                .email{
+                    padding-left: 3%;
+                    border: 0.5 solid #666666;
+                    border:none;
+                    border-radius: 3px;
+                    background-color: #faf7f7;
+                    margin: 0px 40px 6px;
+                    font-size: small;
+                    width: 75%;
+                    height: 6vh;
+                }
+                .contraseña{
+                    padding-left: 3%;
+                    border: 0.5 solid #666666;
+                    border:none;
+                    border-radius: 3px;
+                    background-color: #faf7f7;
+                    margin: 0px 40px 6px;
+                    width: 75%;
+                    height: 6vh;
+                }
+                .boton{
+                    border: 0.5 solid #666666;
+                    border:none;
+                    border-radius: 3px;
+                    background-color: rgb(11, 96, 255);
+                    color: whitesmoke;
+                    margin: 0px 40px 6px;
+                    width: 75%;
+                    height: 5vh;
+                    font-weight: bold;
+                    margin-top: 6px;
+                }
+            .separacion{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 40px;
+                padding-right: 40px;
+                margin: 10px 10px;
+            }
+                .o{
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    color: #666666;
+                }
+                .raya{
+                    background-color: #cccccc;
+                    height: 1px;
+                    width: 40%;
+                }
+            .facebook{
+                margin-bottom: 10px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .facebook img{
+                    width: 25px;
+                    height: 20px;
+                }
+                .facebook a{
+                    padding-left: 2%;
+                    font-size: medium;
+                }
+                .olvidado{
+                    color: rgb(54, 53, 53);
+                    font-size: small;
+                    height: 20px;
+                }
+        .cuenta{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10%;
+            font-size: medium;
+            border: 0.5px solid #cccccc;
+            width: 100%;
+        }
+            .cuenta h4{
+                color: #666666;
+            }
+            .cuenta a{
+                padding-left: 3px;
+            }
+        .descarga{
+            color: #666666;
+            height: 15%;
+        }

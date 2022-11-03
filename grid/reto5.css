@@ -1,0 +1,73 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.juego{
+    height: 100vh;
+    width: 100vw;
+}
+.partida{
+    border: 3px solid black;
+    padding: 10px;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-areas: "juego contador";
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+}
+    .tablero{
+        border: 3px solid black;
+        grid-area: juego;
+        display: grid;
+        grid-template-areas: "x1 x2 x3""y1 y2 y3""z1 z2 z3";
+    }
+        .casilla1{
+            grid-area: x1;
+        }
+        .casilla2{
+            grid-area: y1;
+        }
+        .casilla3{
+            grid-area: z1;
+        }
+        .casilla4{
+            grid-area: x2;
+        }
+        .casilla5{
+            grid-area: y2;
+        }
+        .casilla6{
+            grid-area: z2;
+        }
+        .casilla7{
+            grid-area: x3;
+        }
+        .casilla8{
+            grid-area: y3;
+        }
+        .casilla9{
+            grid-area: z3;
+        }
+    .contador{
+        border: 2px solid black;
+        grid-area: contador;
+        display: grid;
+        grid-template-areas: "x4" "y4";
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr;
+    }
+        .contador_nmero{
+            grid-area: x4;
+        }
+        .contador_reset{
+            grid-area: y4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .reset1{
+                height: 100%;
+            }
