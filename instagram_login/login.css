@@ -9,22 +9,27 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .principal{
-    height: 85vh;
+    height: 590px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
     .imagen img{
-        height: 85vh;
+        height: 590px;
     }
     .formulario{
         padding-top: 2%;
-        width: 30vw;
-        height: 85vh;
+        width: 350px;
+        height: 590px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -35,8 +40,8 @@ main{
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width:28vw;
-            height: 75%;
+            width:350px;
+            height: 350px;
             border: 0.5px solid #cccccc;
             padding-bottom: 4%;
         }
@@ -131,13 +136,15 @@ main{
                     height: 20px;
                 }
         .cuenta{
+            padding: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 10%;
+            height: 100px;
             font-size: medium;
             border: 0.5px solid #cccccc;
-            width: 100%;
+            width:350px;
+            margin-top: 20px;
         }
             .cuenta h4{
                 color: #666666;
@@ -146,6 +153,52 @@ main{
                 padding-left: 3px;
             }
         .descarga{
+            margin-top: 20px;
             color: #666666;
-            height: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
+            .descarga div img{
+                width: 300px;
+                height: 90px;
+            }
+            footer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .enlaces{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap
+                
+            }
+            footer a{
+                font-size: small;
+                color: #666666;
+                margin-right: 10px;
+            }
+            footer div{
+                color: #666666;
+            }
+            .ultimo{
+                color: #666666;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .ultimo a{
+                color: #666666;
+                margin-right: 10px;
+            }
+@media screen and (max-width: 875px){
+    .imagen{
+        display: none;
+    }
+}
+
