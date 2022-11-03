@@ -1,5 +1,5 @@
 let array_peticiones = [];
-let array_filtrado = [];
+
 function informacion(){
     let nombre = document.getElementById("name").value;
     let origen = document.getElementById("origen").value;
@@ -17,15 +17,18 @@ function informacion(){
     console.log(array_peticiones);
 }
 function filtrado(){
-    for(i=0;i<array_peticiones.length;i++){
-        if(array_peticiones[i].Destino.toLowerCase() == "canarias"||array_peticiones[i].Destino.toLowerCase()  == "galicia"||array_peticiones[i].Destino.toLowerCase()  == "mallorca"){
-            array_filtrado.push(array_peticiones[i]);
-        }
+    let array_filtrado = array_peticiones.filter(
+        function filtro(valor){
+    valor.Destino.toLowerCase() == "canarias"||valor.Destino.toLowerCase()  == "galicia"||valor.Destino.toLowerCase()  == "mallorca"})
     }
+    let lista = array_filtrado.getElementById()
     //console.log(array_filtrado);
-    for(obj in array_filtrado){
-        for(valor of obj){
-            alert(valor);
-        }
-    }
+    array_filtrado.forEach(function (){
+        .InnerHtml = `{nombre: ${array_filtrado[peticion].Nombre},
+        origen: ${array_filtrado[peticion].Origen},
+        destino: ${array_filtrado[peticion].Destino},
+        fecha: ${array_filtrado[peticion].fecha},
+        personas: ${array_filtrado[peticion].personas}}`
+    })
+        
 }
