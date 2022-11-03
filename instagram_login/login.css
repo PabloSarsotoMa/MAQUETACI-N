@@ -54,7 +54,6 @@ main{
             }
                 .formulario_titulo img{
                     width:70%;
-                    height: 100%;
                 }
             .inputs{
                 width: 100%;
@@ -134,6 +133,7 @@ main{
                     color: rgb(54, 53, 53);
                     font-size: small;
                     height: 20px;
+                    margin-bottom: 20px;
                 }
         .cuenta{
             padding: 30px;
