@@ -34,8 +34,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 90vh;
 }
     .div{
         display: flex;
@@ -47,11 +47,11 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 100%;
+        height: 100vh;
         
     }
         .section_div div{
-            width: 50%;
+            width: 50vw;
             padding: 2%;
             display: flex;
             flex-direction: column;
@@ -64,3 +64,20 @@
             .section_div div p{
                 text-align: center;
             }
+@media screen and (max-width: 850px){
+.section_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+        align-items: center;
+}
+}
+@media screen and (max-width: 368px){
+    .div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 20%;
+    }
+}
