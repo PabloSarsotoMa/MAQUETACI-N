@@ -19,16 +19,14 @@ function informacion(){
 function filtrado(){
     let array_filtrado = array_peticiones.filter(
         function filtro(valor){
-    valor.Destino.toLowerCase() == "canarias"||valor.Destino.toLowerCase()  == "galicia"||valor.Destino.toLowerCase()  == "mallorca"})
-    }
-    let lista = array_filtrado.getElementById()
+    return(valor.Destino.toLowerCase() == "canarias"||valor.Destino.toLowerCase()  == "galicia"||valor.Destino.toLowerCase()  == "mallorca")})
+    let lista = document.getElementById("form1");
     //console.log(array_filtrado);
-    array_filtrado.forEach(function (){
-        .InnerHtml = `{nombre: ${array_filtrado[peticion].Nombre},
-        origen: ${array_filtrado[peticion].Origen},
-        destino: ${array_filtrado[peticion].Destino},
-        fecha: ${array_filtrado[peticion].fecha},
-        personas: ${array_filtrado[peticion].personas}}`
-    })
-        
-}
+    array_filtrado.forEach(function (valor){
+        console.log(valor);
+        lista.InnerHtml = `{nombre: ${valor.Nombre},
+        origen: ${valor.Origen},
+        destino: ${valor.Destino},
+        fecha: ${valor.fecha},
+        personas: ${valor.personas}}`
+    })}
