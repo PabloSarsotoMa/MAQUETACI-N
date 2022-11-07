@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="imdb.js"></script>
+</head>
+<body style="background-color: black;">
+    <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+            <img src="./galeria/logo.png" alt="" style="width: 80px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./web.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./peliculas.html">FILMS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profesional.html">PROFESSIONAL</a>
+                        </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        GENRES
+                        </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Comedy</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Thriller</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 text-light" style="display: flex; justify-content:center;align-items:center">
+        <h1>Introduce las características de tu nuevo personaje</h1>
+    </div>
+    <div class="container mt-5">
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label text-warning">NOMBRE</label>
+          <input type="text" class="form-control" value="" id="nombre">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label text-warning">EDAD</label>
+          <input type="number" class="form-control" value="" id="edad">
+        </div>
+        <div class="col-4">
+          <label for="inputAddress" class="form-label text-warning">PESO</label>
+          <input type="number" class="form-control" value="" id="peso">
+        </div>
+        <div class="col-4">
+          <label for="inputAddress2" class="form-label text-warning">ALTURA</label>
+          <input type="number" class="form-control" value="" id="altura">
+        </div>
+        <div class="col-md-3">
+            <label for="inputState" class="form-label text-warning">Nº OSCARS</label>
+            <select id="oscars" class="form-select" value="" type="number">
+              <option selected>Choose...</option>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>+3</option>
+            </select>
+          </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label text-warning">NACIONALIDAD</label>
+          <input type="text" class="form-control" value="" id="nacionalidad">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label text-warning">RETIRADO</label>
+          <select id="retirado" class="form-select" value="" type="text">
+            <option selected>Choose...</option>
+            <option>TRUE</option>
+            <option>FALSE</option>
+          </select>
+        </div>
+        <div class="col-md-8">
+            <label for="inputProfesion" class="form-label text-warning">PROFESIÓN</label>
+            <select id="profesion" class="form-select" value="" type="text">
+                <option selected>Choose...</option>
+                <option>actor</option>
+                <option>director</option>
+                <option>escritor</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="inputCity" class="form-label text-warning">INTRODUCIR FOTO</label>
+            <input type="text" class="form-control" value="" id="foto" placeholder="Introduce un url de imagen">
+          </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label text-danger" for="gridCheck">
+              ¿Todo Correcto?
+            </label>
+          </div>
+        </div>
+        <div class="col-12" style="display: flex;justify-content:center;align-items: center;">
+          <button type="button" class="btn btn-primary w-50" onclick="N_personaje()">CREAR PERSONAJE</button>
+        </div>
+      </form>
+    </div>
+    <div class="container mt-3" id="profesionales" style="display: flex;justify-content:space-between;align-items:center;flex-wrap: wrap;">
+    </div>
+    <div class="container mt-5 text-light" style="display: flex; justify-content:center;align-items:center">
+        <h1>CREA TU PELÍCULA</h1>
+    </div>
+    <div class="container mt-5">
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label text-warning">NOMBRE</label>
+          <input type="text" class="form-control" value="" id="titulo">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label text-warning">AÑO DE PUBLICACIÓN</label>
+          <input type="number" class="form-control" value="" id="año">
+        </div>
+        <div class="col-4">
+          <label for="inputAddress" class="form-label text-warning">NACIONALIDAD</label>
+          <input type="text" class="form-control" value="" id="nacionalidad">
+        </div>
+        <div class="col-4">
+          <label for="inputAddress2" class="form-label text-warning">GÉNERO</label>
+          <input type="text" class="form-control" value="" id="genero">
+        </div>
+        <div class="col-md-3">
+            <label for="inputDirector" class="form-label text-warning">DIRECTORES</label>
+            <select id="director" class="form-select" value="" type="text">
+              <option selected>Choose...</option>
+            </select>
+          </div>
+        <div class="col-md-6">
+          <label for="inputEscritor" class="form-label text-warning">ESCRITORES</label>
+          <select id="escritor" class="form-select" value="" type="text">
+            <option selected>Choose...</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+            <label for="inputEscritor" class="form-label text-warning">ACTORES</label>
+            <select id="actor" class="form-select" value="" type="text">
+              <option selected>Choose...</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label text-warning">INTRODUCIR FOTO</label>
+            <input type="text" class="form-control" value="" id="foto_peli" placeholder="Introduce un url de imagen">
+          </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label text-danger" for="gridCheck">
+              ¿Todo Correcto?
+            </label>
+          </div>
+        </div>
+        <div class="col-12" style="display: flex;justify-content:center;align-items: center;">
+          <button type="button" class="btn btn-primary w-50" onclick="N_pelicula()">CREAR PELÍCULA</button>
+        </div>
+      </form>
+    </div>
+    <div class="container mt-3" id="peliculas" style="display: flex;justify-content:space-between;align-items:center;flex-wrap: wrap;">
+    </div>
+</body>
+</html>
