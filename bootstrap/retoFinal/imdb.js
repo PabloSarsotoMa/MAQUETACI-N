@@ -20,36 +20,21 @@ class Movie {
         this.releaseYear = anyo_lanzamiento;
         this.nacionality = nacionalidad;
         this.genre = genero;
-        this.writer ;
-        this.director ;
+        this.writer = [];
+        this.director = [];
         this.language;
         this.plataforma;
         this.isMCU;
         this.mainCharacterName;
         this.producer;
         this.distributor;
-        this.actors ;
+        this.actors = [];
         this.photo = foto;
     }
     printAll() {
         console.log(this);
     }
 }
-class Imdb{
-    constructor(movies){
-        this.peliculas = [movies];
-    }
-    escribirEnficheroJSON(nombreFichero){
-        let stringNombreFichero = JSON.stringify(this);
-        fs.writeFileSync(nombreFichero,stringNombreFichero);
-    }
-    obtenerInstanciaIMDB(nombreFichero){
-        let nuevo_objeto = JSON.parse(fs.readFileSync(nombreFichero));
-        return nuevo_objeto;
-    }
-}
-
-
 function N_personaje(){
     let name = document.getElementById("nombre").value;
     let age = document.getElementById("edad").value;
@@ -93,9 +78,9 @@ function N_pelicula(){
     let photo = document.getElementById("foto_peli").value;
     let n_pelicula = new Movie(tittle,year,nationality,genre,photo);
     console.log(n_pelicula);
-    n_pelicula.writer = document.getElementById("escritor").value;
-    n_pelicula.actors =document.getElementById("actor").value;
-    n_pelicula.director = document.getElementById("director").value;
+    n_pelicula.writer.push(document.getElementById("escritor").value);
+    n_pelicula.actors.push(document.getElementById("actor").value);
+    n_pelicula.director.push(document.getElementById("director").value);
     document.getElementById("peliculas").innerHTML += `
         <div class="card bg-danger" style="width: 18rem;">
         <img src="${n_pelicula.photo}" class="card-img-top" alt="...">
